@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body{
+  background: black;
+  
+}
+.splash_main {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom:0px;
+}
+
+.splash_main img {
+  max-width: 100%;
+  height: auto;
+}
+.main-line{
+  color:white;
+  position:absolute;
+  padding-top:10px;
+  font-family: 'Anton', sans-serif;
+  font-size:40px;
+  
+}
+.second-line{
+  color:white;
+  position:absolute;
+  padding-top:100px;
+  font-family: 'Anton', sans-serif;
+  font-size:40px;
+}
+
+.splash_main .btn{
+  position:absolute;
+  bottom:0%;
+  background-color: darkred;
+}
+
+.splash_main a{
+  color:white;
+  font-family: 'Anton', sans-serif;
+  
+
+}
