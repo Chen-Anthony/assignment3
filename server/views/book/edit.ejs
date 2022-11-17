@@ -17,7 +17,7 @@
                     id="nameTextField"
                     placeholder="Entert The book title"
                     name="name" 
-                    value="<%book.name %>"
+                    value="<%= book.name %>"
                     required>
                 </div>
 
@@ -27,17 +27,17 @@
                     id="authorTextField"
                     placeholder="Entert book author"
                     name="author" 
-                    value="<%book.author %>"
+                    value="<%= book.author %>"
                     required>
                 </div>
 
                 <div class="form-group">
                     <label for ="publishedTextField">Year</label>
-                    <input type="text" class="form-control"
+                    <input type="number" class="form-control"
                     id="publishedTextField"
                     placeholder="Entert Tyear of published"
                     name="published" 
-                    value="<%book.published %>"
+                    value="<%= book.published %>"
                     required>
                 </div>
                 <div class="form-group">
@@ -55,18 +55,18 @@
                     id="priceTextField"
                     placeholder="Entert price"
                     name="price" 
-                    value="<%book.price %>"
+                    value="<%= book.price %>"
                     required>
                 </div>
                 <br>
                 <button class="btn-btn-primary" type="submit">
-                    <i class="fas fa-edit"></i>Submit
-                </button>
+                    <i class="fas fa-edit"></i>Submit</button>
                 <a href="/book-list" class="btn btn-warning">
                     <i class="fas fa-undo"></i>Cancel</a>
-                </form>
+            </form>
                 
-    
+    </div>
+    </div>
 </div>
 
 
