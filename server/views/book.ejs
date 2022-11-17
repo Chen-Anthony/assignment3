@@ -1,0 +1,41 @@
+
+<%- include('./partials/header.ejs')  %>
+<link rel='stylesheet' href='/Content/index.css' />
+</head>
+<body>
+<%- include('./partials/main_nav.ejs') %>
+
+<main class="container">
+    <div class="row">
+         <div class="col-md-offset-3 col-md-10">
+            <h1><%=title %></h1>
+            <br>
+    <table class="table table-bordered table-striped table-hover">
+    <tr class="d-flex">
+
+         <th class="text-center col-2">Name</th>
+         <th class="text-center col-2">Author</th>
+         <th class="text-center col-1">Published</th>
+         <th class="text-center col-6">Description</th>
+         <th class="text-center col-1">Price</th>
+    </tr>
+    <% for ( let count=0; count<Booklist.length; count++){ %>
+        <tr class="d-flex">
+            <td class="text-center col-2"><%= Booklist[count].name %></td>
+            <td class="text-center col-2"><%= Booklist[count].author %></td>
+            <td class="text-center col-1"><%= Booklist[count].published %></td>
+            <td class="text-center col-6"><%= Booklist[count].description %></td>
+            <td class="text-center col-1"><%= Booklist[count].price %></td>
+        </tr>
+    <% } %>
+    </table>
+    
+</div>
+</div>
+   
+ 
+</main>
+
+ 
+<%- include('./partials/bottom_nav.ejs') %>
+<%- include('./partials/footer.ejs') %>
