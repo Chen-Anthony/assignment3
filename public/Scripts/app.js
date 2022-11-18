@@ -8,7 +8,7 @@
                 if(!confirm("are you sure"))
                 {
                     event.preventDefault();
-                    window.location.assign('/book-list');
+                    window.location.assign('/tracker-list');
                 }
             });
         }

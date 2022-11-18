@@ -1,90 +1,92 @@
 let express=require('express');
 let router=express.Router();
 let mongoose=require('mongoose');
-let Book=require('../models/book');
-module.exports.displayBookList=(req,res,next)=>{
-    Book.find((err,Booklist)=>{
+let Tracker=require('../models/tracker');
+module.exports.displayTrackerList=(req,res,next)=>{
+    Tracker.find((err,Trackerlist)=>{
         if (err)
         {
             return console.error(err);
         }
         else{
-            res.render('book/list',{
-            title:'Books',
-            Booklist: Booklist})
+            res.render('tracker/list',{
+            title:'Tracker',
+            Trackerlist: Trackerlist})
         }
     });
     
     
 };
 module.exports.displayAddPage=(req,res,next)=>{
-    res.render('book/add',{title:'Add book'})
+    res.render('tracker/add',{title:'Add user'})
 
 };
 module.exports.processAddPage = (req,res,next)=>{
-    let newBook=Book({
+    let newTracker=Tracker({
         "name":req.body.name,
-        "author":req.body.author,
-        "published":req.body.published,
-        "description":req.body.description,
-        "price":req.body.price
+        "gender":req.body.gender,
+        "age":req.body.age,
+        "height":req.body.height,
+        "weight":req.body.weight,
+        "weight_goal":req.body.weight_goal
     });
-    Book.create(newBook,(err,Book)=>{
+    Tracker.create(newTracker,(err,Tracker)=>{
         if(err)
         {
             console.log(err);
             res.end(err);
         }
         else{
-            res.redirect('/book-list');
+            res.redirect('/tracker-list');
         }
     })
 
 };
 module.exports.displayEditPage =(req,res,next)=>{
     let id=req.params.id;
-    Book.findById(id,(err,bookToEdit)=>{
+    Tracker.findById(id,(err,trackerToEdit)=>{
         if(err)
         {
             console.log(err);
             res.end(err);
         }
         else{
-            res.render('book/edit',{title:"Edit Book",book:bookToEdit});
+            res.render('tracker/edit',{title:"Edit User",tracker:trackerToEdit});
         }
     });
 }
 module.exports.processEditPage =(req,res,next)=>{
     let id=req.params.id;
-    let updateBook=Book({
+    let updateTracker=Tracker({
         "name":req.body.name,
-        "author":req.body.author,
-        "published":req.body.published,
-        "description":req.body.description,
-        "price":req.body.price
+        "gender":req.body.gender,
+        "age":req.body.age,
+        "height":req.body.height,
+        "weight":req.body.weight,
+        "weight_goal":req.body.weight_goal
     });
-    Book.updateOne({_id:id},updateBook,(err)=>{
+    TrackerupdateOne({_id:id},updateTracker,(err)=>{
         if(err)
         {
             console.log(err);
             res.end(err);
         }
         else{
-            res.redirect('/book-list');
+            res.redirect('/tracker-list');
         }
     });
 
 };
 module.exports.performDelete=(req,res,next)=>{
     let id=req.params.id;
-    Book.deleteOne({_id:id},(err)=>{
+    Tracker.deleteOne({_id:id},(err)=>{
         if(err)
         {
             console.log(err);
             res.end(err);
         }
         else{
-            res.redirect('/book-list');
+            res.redirect('/tracker-list');
         
         }
     });
