@@ -1,7 +1,12 @@
 @charset "UTF-8";
+.navbar{
+  font-family: 'Anton', sans-serif;
+ 
+}
+
 
 body{
-  background: black;
+  background: white;
   
 }
 .splash_main {
@@ -10,8 +15,8 @@ body{
 
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 10px;
-  padding-bottom:0px;
+  
+ 
 }
 
 .splash_main img {
@@ -21,7 +26,7 @@ body{
 .main-line{
   color:white;
   position:absolute;
-  padding-top:10px;
+  padding-top:1px;
   font-family: 'Anton', sans-serif;
   font-size:40px;
   
@@ -36,8 +41,9 @@ body{
 
 .splash_main .btn{
   position:absolute;
-  bottom:0%;
+ 
   background-color: darkred;
+  margin-top:250px;
 }
 
 .splash_main a{

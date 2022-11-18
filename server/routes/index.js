@@ -10,10 +10,8 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 router.get('/homepage', indexController.displayHomePage); 
   
-/* GET about me. */
-router.get('/aboutme', function(req, res, next) {
-  res.render('aboutme',{ title: 'About me' });
-});
+
+
 
 
 
