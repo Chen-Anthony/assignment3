@@ -65,7 +65,7 @@ module.exports.processEditPage =(req,res,next)=>{
         "weight":req.body.weight,
         "weight_goal":req.body.weight_goal
     });
-    TrackerupdateOne({_id:id},updateTracker,(err)=>{
+    Tracker.updateOne({_id:id},updateTracker,(err)=>{
         if(err)
         {
             console.log(err);
