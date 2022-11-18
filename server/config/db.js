@@ -1,4 +1,4 @@
 module.exports=
 {
-    "URI":"mongodb://localhost/fitness-tracker"
+    "URI":"mongodb+srv://anthony:dICLkUhyUUH6dkAX@mongodbserver.giecckk.mongodb.net/fitness-tracker"
 }
