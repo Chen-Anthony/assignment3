@@ -58,6 +58,7 @@ module.exports.displayEditPage =(req,res,next)=>{
 module.exports.processEditPage =(req,res,next)=>{
     let id=req.params.id;
     let updateTracker=Tracker({
+        "_id":id,
         "name":req.body.name,
         "gender":req.body.gender,
         "age":req.body.age,

@@ -23,7 +23,7 @@
          <th class="text-center col-1">Height</th>
          <th class="text-center col-1">Weight</th>
          <th class="text-center col-1">Weight Goal</th>
-         <th class="text-center col-1"></th>
+         <th class="text-center col-2"></th>
          <th class="text-center col-2"></th>
     </tr>
     <% for ( let count=0; count<Trackerlist.length; count++){ %>
@@ -34,7 +34,7 @@
             <td class="text-center col-1"><%= Trackerlist[count].height %></td>
             <td class="text-center col-1"><%= Trackerlist[count].weight %></td>
             <td class="text-center col-1"><%= Trackerlist[count].weight_goal %></td>
-            <td class="text-center col-1">
+            <td class="text-center col-2">
                 <a href="/tracker-list/edit/<%=Trackerlist[count]._id %>"
                     class="btn btn-primary">
                     <i class="fas fa-pencil-alt"></i>Edit</a>
