@@ -1,11 +1,16 @@
 
 <%- include('../partials/header.ejs')  %>
-<link rel='stylesheet' href='/Content/index.css' />
+<link rel='stylesheet' href='/Content/tracker_global.css' />
+<link rel='stylesheet' href='/Content/tracker_main_page.css' />
 </head>
 <body>
 <%- include('../partials/main_nav.ejs') %>
 
-<main class="container">
+<main >
+<div class=main_contain>
+    <img src="Assets/images/muscleweight.jpg" alt="muscleweight">
+<div class="container">
+    
     <div class="row">
          <div class="col-md-11">
             <h1><%=title %></h1>
@@ -14,7 +19,7 @@
             </a>
             <br>
             <br>
-    <table class="table table-bordered table-striped table-hover">
+    <table class="table table-bordered table-hover">
     <tr class="d-flex">
 
          <th class="text-center col-2">Name</th>
@@ -27,7 +32,8 @@
          <th class="text-center col-2"></th>
     </tr>
     <% for ( let count=0; count<Trackerlist.length; count++){ %>
-        <tr class="d-flex">
+        <tr class="d-flex ">
+           
             <td class="text-center col-2"><%= Trackerlist[count].name %></td>
             <td class="text-center col-2"><%= Trackerlist[count].gender %></td>
             <td class="text-center col-1"><%= Trackerlist[count].age %></td>
@@ -44,7 +50,7 @@
                     class="btn btn-danger">
                     <i class="fas fa-trash-alt"></i>Delete</a>
             </td>
-           
+        
         </tr>
     <% } %>
     </table>
@@ -52,7 +58,8 @@
 </div>
 </div>
    
- 
+ </div>
+</div>
 </main>
 
  

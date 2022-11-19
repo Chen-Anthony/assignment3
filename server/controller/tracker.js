@@ -10,7 +10,7 @@ module.exports.displayTrackerList=(req,res,next)=>{
         }
         else{
             res.render('tracker/list',{
-            title:'Tracker',
+            title:'Gym Member Fitness Level',
             Trackerlist: Trackerlist})
         }
     });

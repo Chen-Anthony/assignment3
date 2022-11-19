@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.navbar{
+  font-family: 'Anton', sans-serif;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body{
+  background: black;
+  margin:0;
+  padding:0;
+  height:auto;
+  width:100vw;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
