@@ -16,7 +16,7 @@
             <div class="position">
             <h1><%=title %></h1>
             <a href="tracker-list/add" class="btn btn-secondary" role="button" >
-                    <i class="fas fa-plus-circle"></i> New Gym Member
+                <i class="fa-solid fa-user-plus"></i> New Gym Member
             </a>
             </div>
             <br>
@@ -45,12 +45,12 @@
             <td class="text-center col-2">
                 <a href="/tracker-list/edit/<%=Trackerlist[count]._id %>"
                     class="btn btn-light">
-                    <i class="fas fa-pencil-alt"></i>Edit</a>
+                    <i class="fa-solid fa-file-pen"></i>Edit</a>
             </td>
             <td class="text-center col-2">
                 <a href="/tracker-list/delete/<%= Trackerlist[count]._id %>"
                     class="btn btn-danger">
-                    <i class="fas fa-trash-alt"></i>Delete</a>
+                    <i class="fa-solid fa-trash"></i></i>Delete</a>
             </td>
         
         </tr>
