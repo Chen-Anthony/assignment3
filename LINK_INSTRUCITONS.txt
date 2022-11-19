@@ -1,6 +1,0 @@
-link for github profile:
-https://github.com/Chen-Anthony
-
-link for heroku
-https://webdevelopmentsite.herokuapp.com/aboutme
-
