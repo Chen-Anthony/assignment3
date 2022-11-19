@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.body{
+    
+    height:100%;
+    
+}
+.form{
+    color:white;
+    font:lighter;
+    padding-bottom: 15%;
+    
+}
+.form-group{
+    padding-bottom:2%;
+}
+
+
+  
+h1{
+    padding-top:15%;
+    color:white;
+}

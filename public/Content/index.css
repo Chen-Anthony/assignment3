@@ -38,6 +38,13 @@ body{
   font-family: 'Anton', sans-serif;
   font-size:40px;
 }
+.third-line{
+  color:white;
+  position:absolute;
+  padding-top:32%;
+  font-family: 'Anton', sans-serif;
+  font-size:40px;
+}
 
 .splash_main .btn{
   position:absolute;
