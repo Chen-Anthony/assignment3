@@ -6,7 +6,7 @@
 
 
 body{
-  background: white;
+  background: black;
   
 }
 .splash_main {
@@ -16,7 +16,7 @@ body{
   align-items: center;
   justify-content: space-evenly;
   
- 
+  height:100vh;
 }
 
 .splash_main img {
@@ -26,7 +26,7 @@ body{
 .main-line{
   color:white;
   position:absolute;
-  padding-top:1px;
+  padding-bottom:30%;
   font-family: 'Anton', sans-serif;
   font-size:40px;
   
@@ -34,24 +34,27 @@ body{
 .second-line{
   color:white;
   position:absolute;
-  padding-top:100px;
+  padding-bottom:20%;
   font-family: 'Anton', sans-serif;
   font-size:40px;
 }
-.third-line{
-  color:white;
-  position:absolute;
-  padding-top:32%;
-  font-family: 'Anton', sans-serif;
-  font-size:40px;
-}
-
 .splash_main .btn{
   position:absolute;
  
   background-color: darkred;
-  margin-top:250px;
+  margin-bottom:5%
+  
 }
+
+.third-line{
+  color:white;
+  position:absolute;
+  
+  font-family: 'Anton', sans-serif;
+  font-size:40px;
+  margin-top:15%
+}
+
 
 .splash_main a{
   color:white;
