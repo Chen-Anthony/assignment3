@@ -2,6 +2,7 @@ let express=require('express');
 let router=express.Router();
 let mongoose=require('mongoose');
 let Tracker=require('../models/tracker');
+//this allows the route to open the main database page
 module.exports.displayTrackerList=(req,res,next)=>{
     Tracker.find((err,Trackerlist)=>{
         if (err)
@@ -17,10 +18,12 @@ module.exports.displayTrackerList=(req,res,next)=>{
     
     
 };
+//this allows use to route to the add page which adds users
 module.exports.displayAddPage=(req,res,next)=>{
     res.render('tracker/add',{title:'Add user'})
 
 };
+//this connects to the schema and adds the database schema forcing user to type something in because its requried
 module.exports.processAddPage = (req,res,next)=>{
     let newTracker=Tracker({
         "name":req.body.name,
@@ -42,6 +45,7 @@ module.exports.processAddPage = (req,res,next)=>{
     })
 
 };
+//this connects to the edit page and will force the user to type something in
 module.exports.displayEditPage =(req,res,next)=>{
     let id=req.params.id;
     Tracker.findById(id,(err,trackerToEdit)=>{
@@ -78,6 +82,7 @@ module.exports.processEditPage =(req,res,next)=>{
     });
 
 };
+//this allows the delete button to delete data
 module.exports.performDelete=(req,res,next)=>{
     let id=req.params.id;
     Tracker.deleteOne({_id:id},(err)=>{

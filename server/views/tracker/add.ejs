@@ -5,11 +5,12 @@
 <link rel='stylesheet' href='/Content/tracker_edit_page.css' />
 </head>
 <body>
-
+<!--creates partials to link to main pages to clean up code-->
 <%- include('../partials/main_nav.ejs') %>
 <div class="container">
- 
+ <!--This creates a container class that has the whole form in it to input information-->
     <div class="row">
+        <!--This table gets information from user so that it can post the new information into the table-->
         <div class="col-md-offset-3 col-md-6">
             <h1><%= title %></h1>
             <form class="form" method="post">

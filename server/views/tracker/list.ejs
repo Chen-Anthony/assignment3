@@ -12,10 +12,12 @@
 <div class="container">
     
     <div class="row">
+        <!--this creates the original table database that will store and update all the information-->
          <div class="col-md-11">
             <div class="position">
             <h1><%=title %></h1>
             <a href="tracker-list/add" class="btn btn-secondary" role="button" >
+                <!--This allows member to add new gym user-->
                 <i class="fa-solid fa-user-plus"></i> New Gym Member
             </a>
             </div>
@@ -23,7 +25,7 @@
             <br>
     <table class="table table-bordered table-hover">
     <tr class="d-flex">
-
+<!--this is the first row of the table that shows what kind of info is displayed-->
          <th class="text-center col-2">Name</th>
          <th class="text-center col-2">Gender</th>
          <th class="text-center col-1">Age</th>
@@ -35,7 +37,7 @@
     </tr>
     <% for ( let count=0; count<Trackerlist.length; count++){ %>
         <tr class="d-flex ">
-           
+           <!--this gets the input and displays it the count++ allows it to keep adding-->
             <td class="text-center col-2"><%= Trackerlist[count].name %></td>
             <td class="text-center col-2"><%= Trackerlist[count].gender %></td>
             <td class="text-center col-1"><%= Trackerlist[count].age %></td>

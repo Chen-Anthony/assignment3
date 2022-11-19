@@ -1,3 +1,4 @@
+//this is the script event that warns user if you really want to delete when you hit the delete button
 (function(){
     function Start()
     {

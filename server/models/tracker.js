@@ -14,3 +14,4 @@ let trackerModel=mongoose.Schema({
 
 );
 module.exports=mongoose.model('Tracker',trackerModel);
+//this connects to mongo with the schema database 
